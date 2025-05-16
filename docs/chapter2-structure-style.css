@@ -1,0 +1,139 @@
+/* ===== Chapter 2 CSS ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  font-family: 'Comfortaa', cursive, sans-serif;
+  background: #d9f0e0; /* baby green pastel */
+  color: #2f4f4f; /* dark slate gray for comfortable reading */
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.5s ease;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #2e7d32; /* strong green */
+  margin-bottom: 0.2em;
+}
+
+header p.intro {
+  font-size: 1.2rem;
+  color: #4caf50; /* lighter green */
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffffcc; /* white with slight transparency */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: slideUp 1s ease forwards;
+}
+
+.content h2 {
+  color: #388e3c;
+  border-bottom: 3px solid #81c784;
+  padding-bottom: 8px;
+}
+
+.content p, .content ul, .content ol {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.content strong {
+  color: #1b5e20;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+pre {
+  background: #e8f5e9;
+  border: 2px solid #a5d6a7;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+
+button#runBtn {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  display: block;
+}
+
+button#runBtn:hover {
+  background-color: #2e7d32;
+}
+
+textarea#htmlInput {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #a5d6a7;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+iframe#outputFrame {
+  width: 100%;
+  height: 250px;
+  border: 2px solid #81c784;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 10px #a5d6a7;
+  margin-top: 15px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #2e7d32;
+}
+
+footer a.back-home {
+  text-decoration: none;
+  color: #388e3c;
+  font-weight: 600;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+footer a.back-home:hover {
+  color: #1b5e20;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

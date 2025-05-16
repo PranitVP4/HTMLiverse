@@ -1,0 +1,136 @@
+/* ===== Chapter 3 CSS ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff9db; /* baby yellow */
+  color: #665500; /* dark golden brown */
+  margin: 0;
+  padding: 25px;
+  transition: background-color 0.5s ease;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ffcc00; /* bright yellow */
+  text-shadow: 1px 1px 2px #aa9900;
+  margin-bottom: 0.1em;
+}
+
+header p.intro {
+  font-size: 1.3rem;
+  color: #b38f00;
+}
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fffce6;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(170, 153, 0, 0.25);
+  animation: slideUp 1s ease forwards;
+}
+
+.content h2 {
+  color: #bb9900;
+  border-bottom: 3px solid #ffdd44;
+  padding-bottom: 8px;
+}
+
+.content h3 {
+  color: #996600;
+  margin-top: 25px;
+}
+
+.content p, .content pre {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+pre {
+  background: #fff7b3;
+  border: 2px solid #ffec66;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+textarea#htmlInput {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 2px solid #ffe066;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+button#runBtn {
+  background-color: #ffcc00;
+  color: #664d00;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.3rem;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button#runBtn:hover {
+  background-color: #ccaa00;
+}
+
+iframe#outputFrame {
+  width: 100%;
+  height: 270px;
+  border: 2px solid #ffdd44;
+  border-radius: 14px;
+  background-color: #fffbea;
+  box-shadow: 0 0 10px #ffe066;
+  margin-top: 18px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 1rem;
+  color: #997700;
+}
+
+footer a.back-home {
+  text-decoration: none;
+  color: #bb9900;
+  font-weight: 600;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+footer a.back-home:hover {
+  color: #665500;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

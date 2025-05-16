@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 9: HTML Forms Part 2</title>
+  <link rel="stylesheet" href="chapter9-forms-part2-style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Chapter 9: HTML Forms (Part 2)</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="chapter8-forms-part1.html">⬅️ Previous</a>
+      <a href="chapter10-semantic-tags.html">Next ➡️</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>📌 Let’s Level Up Our Forms!</h2>
+      <p>In Part 1, we created simple forms with just text and email fields. Now, let’s add more form elements that help collect various types of data!</p>
+    </section>
+
+    <section>
+      <h3>🔘 Radio Buttons</h3>
+      <p>Radio buttons allow users to pick <strong>only one</strong> option from a list.</p>
+      <div class="code-box">
+        &lt;label&gt;Choose your class:&lt;/label&gt;<br>
+        &lt;input type="radio" name="grade" value="6" /&gt; Class 6<br>
+        &lt;input type="radio" name="grade" value="7" /&gt; Class 7<br>
+        &lt;input type="radio" name="grade" value="8" /&gt; Class 8
+      </div>
+    </section>
+
+    <section>
+      <h3>☑️ Checkboxes</h3>
+      <p>Checkboxes let users select <strong>one or more</strong> options.</p>
+      <div class="code-box">
+        &lt;label&gt;Choose your favorite subjects:&lt;/label&gt;<br>
+        &lt;input type="checkbox" name="subject" value="Math" /&gt; Math<br>
+        &lt;input type="checkbox" name="subject" value="Science" /&gt; Science<br>
+        &lt;input type="checkbox" name="subject" value="English" /&gt; English
+      </div>
+    </section>
+
+    <section>
+      <h3>⬇️ Dropdown (Select)</h3>
+      <p>A dropdown lets users pick one option from a menu.</p>
+      <div class="code-box">
+        &lt;label for="favColor"&gt;Pick your favorite color:&lt;/label&gt;<br>
+        &lt;select name="favColor" id="favColor"&gt;<br>
+        &nbsp;&nbsp;&lt;option value="red"&gt;Red&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value="blue"&gt;Blue&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;option value="green"&gt;Green&lt;/option&gt;<br>
+        &lt;/select&gt;
+      </div>
+    </section>
+
+    <section>
+      <h3>📝 Textarea</h3>
+      <p>A textarea is used for longer input like comments or feedback.</p>
+      <div class="code-box">
+        &lt;label for="feedback"&gt;Your Feedback:&lt;/label&gt;<br>
+        &lt;textarea id="feedback" name="feedback" rows="4" cols="50"&gt;&lt;/textarea&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 Let’s Build a Full Form!</h2>
+      <form id="survey-form">
+        <label for="username">👤 Name:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">📧 Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label>🎓 Grade:</label><br>
+        <input type="radio" name="grade" value="6" /> Class 6
+        <input type="radio" name="grade" value="7" /> Class 7
+        <input type="radio" name="grade" value="8" /> Class 8
+
+        <label>📚 Favorite Subjects:</label><br>
+        <input type="checkbox" name="subject" value="Math" /> Math
+        <input type="checkbox" name="subject" value="Science" /> Science
+        <input type="checkbox" name="subject" value="English" /> English
+
+        <label for="favColor">🎨 Favorite Color:</label>
+        <select name="favColor" id="favColor">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+
+        <label for="feedback">📝 Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ☕ and ❤️ by Pranit Patil for his bestest brothers and sisters ever!</p>
+  </footer>
+
+  <script src="chapter9-forms-part2-script.js"></script>
+</body>
+</html>

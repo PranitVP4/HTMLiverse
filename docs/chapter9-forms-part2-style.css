@@ -1,0 +1,128 @@
+/* chapter9-forms-part2-style.css */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fffdd0; /* Cream background */
+  color: #3e3e3e;
+  margin: 0;
+  padding: 0;
+  animation: fadeInBody 1s ease-in-out;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  background-color: #fff8d6;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #ffe680;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #e6ac00;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #b38f00;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+header nav a:hover {
+  transform: scale(1.2);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.code-box {
+  background-color: #ffffe0;
+  border-left: 6px solid #ffeb99;
+  padding: 15px;
+  margin: 20px 0;
+  font-family: monospace;
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(255, 236, 179, 0.5);
+  animation: popIn 0.5s ease-in;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+form {
+  background-color: #fffefa;
+  padding: 25px;
+  border: 2px solid #ffe680;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 238, 153, 0.6);
+  animation: popIn 0.5s ease-in-out;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #cc9900;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ffe066;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 8px #ffeb99;
+}
+
+input[type="submit"] {
+  background-color: #ffd633;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #fff8d6;
+  text-align: center;
+  padding: 15px;
+  border-top: 4px solid #ffe680;
+  font-weight: bold;
+  color: #b38f00;
+  animation: fadeInBody 2s ease-in;
+}

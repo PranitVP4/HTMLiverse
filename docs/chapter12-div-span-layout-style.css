@@ -1,0 +1,139 @@
+/* chapter12-div-span-layout-style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5e6d3 0%, #ecdcc7 100%);
+  color: #4d3b2a;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  animation: backgroundScroll 20s linear infinite;
+}
+
+@keyframes backgroundScroll {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+header {
+  background-color: #d9c2aa;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 5px solid #b89b79;
+  animation: headerFade 1.5s ease-in-out;
+}
+
+@keyframes headerFade {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  color: #5a4430;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6b4c31;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #2e1c0f;
+}
+
+main {
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 50px;
+  animation: slideIn 1s ease forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+section.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.code-box {
+  background-color: #fdf6ed;
+  border-left: 6px solid #c89b6f;
+  padding: 20px;
+  margin: 30px 0;
+  font-family: monospace;
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(180, 140, 100, 0.3);
+  border-radius: 10px;
+}
+
+.layout-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  animation: spiralIn 2s ease-in-out;
+}
+
+@keyframes spiralIn {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.layout-box > div {
+  background-color: #e8d4ba;
+  padding: 20px;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px rgba(100, 70, 40, 0.3);
+  transition: transform 0.4s;
+}
+
+.layout-box > div:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: #f4e3cc;
+}
+
+span.highlight {
+  color: #c87f4f;
+  font-weight: bold;
+  background-color: #fff1e3;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #d9c2aa;
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid #b89b79;
+  font-weight: bold;
+  color: #6b4c31;
+  animation: footerBounce 2s infinite alternate;
+}
+
+@keyframes footerBounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}

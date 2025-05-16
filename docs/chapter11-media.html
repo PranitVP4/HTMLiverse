@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 11 - Audio & Video in HTML</title>
+  <link rel="stylesheet" href="chapter11-media-style.css" />
+</head>
+<body class="chapter11">
+
+  <header>
+    <h1>🎵 Chapter 11: Audio & Video in HTML</h1>
+    <p>Learn how to embed audio and video elements into your webpage.</p>
+    <nav>
+      <a href="index.html">🏠 Home</a> |
+      <a href="chapter10-semantic-tags.html">Previous Chapter</a> |
+      <a href="chapter12-div-span-layout.html">Next Chapter</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="audio-section">
+      <h2>🔊 Audio Element</h2>
+      <p>The <code>&lt;audio&gt;</code> tag lets you embed sound content.</p>
+      <p>It supports multiple formats for compatibility.</p>
+
+      <h3>Basic Audio Example:</h3>
+      <pre><code>&lt;audio controls&gt;
+  &lt;source src="audio/sample.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+
+      <audio controls>
+        <source src="https://open.spotify.com/track/5VZ0soW5syQfefCUj603DW?si=8b27da1b61b54cdd" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Attributes of &lt;audio&gt;:</h3>
+      <ul>
+        <li><strong>controls</strong>: shows play, pause, volume controls</li>
+        <li><strong>autoplay</strong>: starts playing automatically (use carefully!)</li>
+        <li><strong>loop</strong>: repeats the audio continuously</li>
+        <li><strong>muted</strong>: starts audio muted</li>
+      </ul>
+    </section>
+
+    <section id="video-section">
+      <h2>📹 Video Element</h2>
+      <p>The <code>&lt;video&gt;</code> tag embeds videos in your page.</p>
+      <p>It supports multiple video formats for better browser support.</p>
+
+      <h3>Basic Video Example:</h3>
+      <pre><code>&lt;video width="480" controls&gt;
+  &lt;source src="video/sample.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+
+      <video width="480" controls>
+        <source src="https://youtu.be/uyiG6uw-6pA?si=Db8jAFRM0ITzvbCs" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Attributes of &lt;video&gt;:</h3>
+      <ul>
+        <li><strong>width</strong>: sets the width of the video player</li>
+        <li><strong>height</strong>: sets the height of the video player</li>
+        <li><strong>controls</strong>: shows playback controls</li>
+        <li><strong>autoplay</strong>: plays video automatically</li>
+        <li><strong>loop</strong>: repeats video on end</li>
+        <li><strong>muted</strong>: mutes video initially</li>
+      </ul>
+    </section>
+
+    <section id="accessibility">
+      <h2>♿ Accessibility Tips</h2>
+      <p>Always add captions or transcripts for videos to help everyone.</p>
+      <p>Use the <code>&lt;track&gt;</code> tag inside <code>&lt;video&gt;</code> for subtitles:</p>
+
+      <pre><code>&lt;video controls&gt;
+  &lt;source src="video/sample.mp4" type="video/mp4"&gt;
+  &lt;track kind="captions" src="captions_en.vtt" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Pranit for his all brothers and sisters</p>
+  </footer>
+
+  <script src="chapter11-media-script.js"></script>
+</body>
+</html>

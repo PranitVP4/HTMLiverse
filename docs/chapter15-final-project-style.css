@@ -1,0 +1,87 @@
+/* chapter15-final-project-style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fbd3e9 0%, #bbf0f3 25%, #d4fc79 50%, #96e6a1 75%, #f6f0c4 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  animation: rainbowBackground 20s infinite linear;
+}
+
+@keyframes rainbowBackground {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff0f5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: popHeader 1.5s ease-in-out;
+}
+
+@keyframes popHeader {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+header h1 {
+  font-size: 3.2rem;
+  color: #7a4b94;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+  animation: fadeInMain 2s ease forwards;
+}
+
+@keyframes fadeInMain {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  background: #ffffffcc;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: rotateZ(1deg) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: #5a189a;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+footer {
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+  color: #7a4b94;
+  border-top: 6px solid #e0b3ff;
+  animation: rainbowPulse 3s infinite alternate;
+}
+
+@keyframes rainbowPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}

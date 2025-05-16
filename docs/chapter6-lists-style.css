@@ -1,0 +1,163 @@
+/* chapter6-lists-style.css */
+
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f0ff; /* baby lavender light */
+  color: #6b52ae; /* deep lavender text */
+  line-height: 1.6;
+  padding: 20px;
+  animation: fadeIn 1.3s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideDown 1.2s ease forwards;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #a48de6; /* bright baby lavender */
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px #9c82e6;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #8c7ee6;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Navigation */
+nav a {
+  text-decoration: none;
+  color: #7d6ee6;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #b6a6f9;
+  color: #f5f0ff;
+  border-color: #7d6ee6;
+  box-shadow: 0 0 8px #b6a6f9;
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main content */
+main {
+  max-width: 850px;
+  margin: auto;
+  background: #dfd7ff;
+  padding: 30px 35px;
+  border-radius: 22px;
+  box-shadow: 0 0 20px rgba(132, 104, 255, 0.4);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Fade in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section headings */
+section h2 {
+  font-size: 1.9rem;
+  color: #5a44b1;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #a48de6;
+  padding-bottom: 6px;
+}
+
+/* Paragraphs */
+section p {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  color: #6b52ae;
+}
+
+/* Lists styling */
+ul, ol, dl {
+  margin-left: 22px;
+  margin-bottom: 30px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  color: #7d6ee6;
+}
+
+dl dt {
+  font-weight: 700;
+  color: #5a44b1;
+  margin-top: 12px;
+}
+
+dl dd {
+  margin-left: 20px;
+  margin-bottom: 12px;
+  font-style: italic;
+  color: #8775d6;
+}
+
+/* Code box */
+.code-box {
+  background: #cfc7ff;
+  padding: 20px 24px;
+  border-radius: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #4a378f;
+  margin-bottom: 30px;
+  box-shadow: inset 0 0 14px #a48de6;
+  user-select: all;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.15rem;
+  color: #6b52ae;
+  font-weight: 700;
+  animation: fadeIn 2s ease;
+}

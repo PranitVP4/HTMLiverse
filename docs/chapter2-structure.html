@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 2: HTML Structure</title>
+  <link rel="stylesheet" href="chapter2-structure-style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Chapter 2: HTML Structure</h1>
+    <p class="intro">
+      Learn how an HTML document is structured from top to bottom — the building blocks of every webpage!
+    </p>
+  </header>
+
+  <section class="content">
+    <h2>Basic HTML Document Structure</h2>
+    <p>
+      Every HTML page has a <strong>standard structure</strong> with specific parts:
+    </p>
+    <ul>
+      <li><strong>DOCTYPE Declaration</strong> — tells the browser which version of HTML is used</li>
+      <li><strong>&lt;html&gt;</strong> — the root element that wraps the whole page</li>
+      <li><strong>&lt;head&gt;</strong> — contains metadata, title, links to styles/scripts</li>
+      <li><strong>&lt;body&gt;</strong> — contains all the visible content</li>
+    </ul>
+
+    <h3>Example of a basic HTML page structure:</h3>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;p&gt;This is my website.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <h3>Explanation of each part:</h3>
+    <ol>
+      <li><code>&lt;!DOCTYPE html&gt;</code> – tells browser this is an HTML5 document</li>
+      <li><code>&lt;html lang="en"&gt;</code> – root element with language attribute</li>
+      <li><code>&lt;head&gt;</code> – holds page title, metadata, links to CSS & JS</li>
+      <li><code>&lt;body&gt;</code> – visible content for users</li>
+    </ol>
+
+    <h3>Try it Yourself!</h3>
+    <p>Type your own simple HTML structure below and see it displayed live:</p>
+    <textarea id="htmlInput" placeholder="Write your HTML here..." rows="8"></textarea>
+    <button id="runBtn">Run My HTML</button>
+
+    <h3>Output:</h3>
+    <iframe id="outputFrame" sandbox="allow-same-origin allow-scripts" title="Live Output"></iframe>
+  </section>
+
+  <footer>
+    <p>Made with 💚 by Pranit Patil for her genius Brothers and Sisters</p>
+    <a href="index.html" class="back-home" aria-label="Back to Home">⬅️ Back to Home</a>
+  </footer>
+
+  <script src="chapter2-structure-script.js"></script>
+</body>
+</html>

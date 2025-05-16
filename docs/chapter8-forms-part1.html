@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 8: Forms (Part 1)</title>
+  <link rel="stylesheet" href="chapter8-forms-part1-style.css" />
+</head>
+<body>
+  <header>
+    <h1>✉️ Chapter 8: Forms (Part 1)</h1>
+    <p>Let's start learning how to collect information from users using forms!</p>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="chapter7-tables.html">⏮️ Previous</a>
+      <a href="chapter9-forms-part2.html">Next ⏭️</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="forms-intro">
+      <h2>📝 What is a Form?</h2>
+      <p>A <code>&lt;form&gt;</code> is used to collect user input. Inside it, we use elements like:</p>
+      <ul>
+        <li><strong>&lt;input&gt;</strong>: for text, email, password, etc.</li>
+        <li><strong>&lt;label&gt;</strong>: for describing each input</li>
+        <li><strong>&lt;textarea&gt;</strong>: for longer text</li>
+        <li><strong>&lt;button&gt;</strong>: for submitting the form</li>
+      </ul>
+    </section>
+
+    <section class="form-example">
+      <h2>🚀 Let's Build a Simple Form!</h2>
+      <form>
+        <label for="name">👤 Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="email">📧 Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="message">📃 Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message..." rows="4"></textarea>
+
+        <button type="submit">📨 Send</button>
+      </form>
+
+      <div class="code-box">
+        <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" /&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" /&gt;
+
+  &lt;label for="message"&gt;Message:&lt;/label&gt;
+  &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </section>
+
+    <section class="tips">
+      <h2>🚡 Aunty's Tips!</h2>
+      <ul>
+        <li>Always use <code>label</code> with <code>for</code> matching the input's <code>id</code>.</li>
+        <li><code>required</code> makes fields mandatory.</li>
+        <li>Use <code>placeholder</code> to guide users.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Superb work, Siblings! Part 2 is coming next. Get ready! 🙌🏻 — Pranit</p>
+  </footer>
+
+  <script src="chapter8-forms-part1-script.js"></script>
+</body>
+</html>

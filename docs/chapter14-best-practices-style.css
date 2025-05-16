@@ -1,0 +1,112 @@
+/* chapter14-best-practices-style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f8f5ff, #ece6f9);
+  color: #4a3c61;
+  margin: 0;
+  padding: 0;
+  animation: bgWaves 40s ease-in-out infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes bgWaves {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background-color: #e4d7f5;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 6px solid #bfa5e6;
+  animation: fadeDrop 1s ease-in-out;
+}
+
+@keyframes fadeDrop {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #5b3a87;
+}
+
+main {
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 60px;
+  animation: slideIn 1.2s ease forwards;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+section.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.code-box {
+  background-color: #f5f0fa;
+  border-left: 6px solid #c7aee6;
+  padding: 25px;
+  margin: 40px 0;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(190, 170, 230, 0.3);
+}
+
+.tip-box {
+  background: #efe4fa;
+  border: 2px dashed #c9b0ed;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  color: #593c7a;
+  transition: transform 0.3s ease;
+}
+
+.tip-box:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #e4d7f5;
+  text-align: center;
+  padding: 25px;
+  border-top: 6px solid #bfa5e6;
+  font-weight: bold;
+  color: #5b3a87;
+  animation: fadeFooter 2s infinite alternate;
+}
+
+@keyframes fadeFooter {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.03); }
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}

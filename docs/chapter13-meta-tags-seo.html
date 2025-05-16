@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 13: iframe, object, embed</title>
+  <link rel="stylesheet" href="chapter13-iframe-object-embed-style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chapter 13: <code>&lt;iframe&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;embed&gt;</code></h1>
+    <nav>
+      <a href="#iframe">iframe</a>
+      <a href="#object">object</a>
+      <a href="#embed">embed</a>
+    </nav>
+  </header>
+  <main>
+    <section id="iframe">
+      <h2>1. The &lt;iframe&gt; Tag</h2>
+      <p>
+        The <code>&lt;iframe&gt;</code> tag is used to embed another HTML page inside the current one.
+      </p>
+      <div class="code-box">
+        &lt;iframe src="https://example.com" width="300" height="200"&gt;&lt;/iframe&gt;
+      </div>
+      <iframe src="https://example.com" width="300" height="200"></iframe>
+    </section>
+
+    <section id="object">
+      <h2>2. The &lt;object&gt; Tag</h2>
+      <p>
+        The <code>&lt;object&gt;</code> tag is used to embed media like PDFs, videos, or webpages.
+      </p>
+      <div class="code-box">
+        &lt;object data="sample.pdf" type="application/pdf" width="300" height="200"&gt;&lt;/object&gt;
+      </div>
+      <object data="sample.pdf" type="application/pdf" width="300" height="200"></object>
+    </section>
+
+    <section id="embed">
+      <h2>3. The &lt;embed&gt; Tag</h2>
+      <p>
+        The <code>&lt;embed&gt;</code> tag is a self-closing tag used to embed multimedia.
+      </p>
+      <div class="code-box">
+        &lt;embed src="video.mp4" width="300" height="200" type="video/mp4"&gt;
+      </div>
+      <embed src="video.mp4" width="300" height="200" type="video/mp4" />
+    </section>
+  </main>
+
+  <footer>
+    Learn HTML visually & interactively!
+  </footer>
+
+  <script src="chapter13-iframe-object-embed-script.js"></script>
+</body>
+</html>

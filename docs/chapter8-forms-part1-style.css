@@ -1,0 +1,93 @@
+/* chapter8-forms-part1-style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe5b4; /* Baby Bright Peach */
+  color: #4d2c19;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffd3a1;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #fcb070;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #944d00;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.code-box {
+  background-color: #fff3e0;
+  border-left: 6px solid #ffb570;
+  padding: 15px;
+  margin: 20px 0;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+form {
+  background-color: #fff8ed;
+  padding: 20px;
+  border: 2px solid #ffc488;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 170, 100, 0.3);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #803300;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ffa96a;
+}
+
+input[type="submit"] {
+  background-color: #ffae70;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff9940;
+}
+
+footer {
+  background-color: #ffd3a1;
+  text-align: center;
+  padding: 15px;
+  border-top: 4px solid #fcb070;
+  font-weight: bold;
+  color: #944d00;
+}
